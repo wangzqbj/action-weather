@@ -14,12 +14,12 @@ jobs:
         - name: "Send Mail"
           uses: dawidd6/action-send-mail@master
           with:
-          server_address: smtp.163.com
-          server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: Shanghai Weather Report
-          body: file://result.html
-          to: wangzqbj@inspur.com
-          from: GitHub Actions
-          content_type: text/html
+            server_address: smtp.163.com
+            server_port: 465
+            username: ${{ secrets.MAIL_USERNAME }}
+            password: ${{ secrets.MAIL_PASSWORD }}
+            subject: Shanghai Weather Report
+            body: file://result.html
+            to: wangzqbj@inspur.com
+            from: GitHub Actions
+            content_type: text/html
